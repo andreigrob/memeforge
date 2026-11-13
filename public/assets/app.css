@@ -52,3 +52,10 @@
 
 .meme-top { top: 3%; }
 .meme-bottom { bottom: 3%; }
+
+/* Brand mark colour in the navbar (moved from an inline <style> for CSP). */
+.navbar-brand .brand-mark { color: #ffc93c; }
+
+/* Sticky preview column on New Meme / Edit (replaces an inline style="" for CSP).
+   Compound selector so it overrides Bootstrap's .sticky-top { top: 0; z-index: 1020 }. */
+.sticky-top.preview-sticky { top: 1rem; z-index: 1; }
